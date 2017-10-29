@@ -33,6 +33,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.LabelHerpes = new System.Windows.Forms.Label();
             this.LabelWizzard = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeUNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // wizzard
@@ -83,6 +91,59 @@
             this.LabelWizzard.TabIndex = 4;
             this.LabelWizzard.Text = "Play Wizzard";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optionsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(676, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userToolStripMenuItem});
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // userToolStripMenuItem
+            // 
+            this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addToolStripMenuItem,
+            this.removeToolStripMenuItem,
+            this.changePWToolStripMenuItem,
+            this.changeUNToolStripMenuItem});
+            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.userToolStripMenuItem.Text = "User";
+            // 
+            // addToolStripMenuItem
+            // 
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem.Text = "Add";
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.removeToolStripMenuItem.Text = "Remove";
+            // 
+            // changePWToolStripMenuItem
+            // 
+            this.changePWToolStripMenuItem.Name = "changePWToolStripMenuItem";
+            this.changePWToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.changePWToolStripMenuItem.Text = "Change PW";
+            // 
+            // changeUNToolStripMenuItem
+            // 
+            this.changeUNToolStripMenuItem.Name = "changeUNToolStripMenuItem";
+            this.changeUNToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.changeUNToolStripMenuItem.Text = "Change UN";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,8 +154,12 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.herpes);
             this.Controls.Add(this.wizzard);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainWindow";
             this.Text = "MainWindow";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,5 +172,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label LabelHerpes;
         private System.Windows.Forms.Label LabelWizzard;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changePWToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeUNToolStripMenuItem;
     }
 }
